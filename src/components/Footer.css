@@ -1,0 +1,31 @@
+.footer {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* White text color */
+  display: flex;
+  justify-content: center; /* Center text horizontally */
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 16px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+.logo{
+    margin-left: -150px;
+}
+
+.footer-text {
+  margin: 0;
+  text-align: center;
+}
+
+.footer-github {
+  color: #fff; /* White color for icon */
+  margin-left: auto;
+  transition: color 0.3s;
+}
+
+.footer-github:hover {
+  color: #ff9800; /* Color on hover */
+}
