@@ -13,6 +13,7 @@ const ToDoList = () => {
 
   useEffect(() => {
     const fetchList = async () => {
+      console.log(`Fetching list of ${customlistname}...`);
       try {
         const response = await axios.get(
           `${backendUrl}/user/${customlistname}`
