@@ -7,12 +7,12 @@ const { connect } = require("./db/connect");
 
 connect();
 
-app.use(cors());
-  // {
-  // origin: 'http://localhost:3000', // Your frontend's origin
-  // methods: ['GET', 'POST'], // Allowed methods
-  // credentials: true // If you're using cookies or authentication
-// }));
+app.use(cors(
+  {
+  origin: 'https://augmentix-git-frontend-shradhesh71s-projects.vercel.app/', // Your frontend's origin
+  methods: ['GET', 'POST'], // Allowed methods
+  credentials: true // If you're using cookies or authentication
+}));
 
 // Middleware to parse JSON bodies
 app.use(express.json());
